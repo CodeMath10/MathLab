@@ -1,0 +1,163 @@
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+body{background-color:#FFFFF5}
+h1{font-family:"Poppins",sans-serif;font-size:4.75vw;font-weight:700;color:#FF8C00;margin:5px}
+h2{font-family:"Poppins",sans-serif;font-size:2.89375vw;font-weight:600;color:#FF8C00;margin:0px}
+p{font-family:"Poppins";font-size:1.5vw;color:#000028;margin:5px}
+Form{margin-bottom:0px}
+input{width:200px;padding:10px;margin:8px;font-size:15px;font-family:"Poppins";border:2px solid #ccc;border-radius:8px}
+button{background-color:#FF8C00;color:white;font-family:"Poppins";font-size:1vw;padding:10px 20px;border:none;border-radius:10px;cursor:pointer;width:15vw;font-size:1.25vw;margin:2px}
+.cardrow{display:flex;gap:20px}
+.card{padding:15px;background-color:rgba(251,227,214,0.5);border-radius:20px;}
+.maincard1{background-color:rgba(251,227,214,0.5);border-radius:20px;display:flex;overflow:visible;height:23vw;}
+.cardd{aspect-ratio:1/1;height:100%}
+.Card1{flex:3;}
+.Card2{flex:2;}
+.Card3{flex:1;padding:15px;}
+.Card4{flex:4}
+.tp{height:23vw}
+.la{text-align:right}
+.mental{display:flex;justify-content:space-between;}
+#results{display:none}
+</style>
+<title>MathLab</title>
+</head>
+<body>
+<script>
+let facts=["There are infinitely many prime numbers.","Some infinities are bigger than other infinities.","No whole number greater than 1 has two different prime factorizations.","An infinite hotel can be full and still fit more guests.","No real number squared is negative.","Every whole number greater than 1 can be made by multiplying primes.","Some numbers are too large for ordinary calculators to display.","0.99999... = 1.","111111111 × 111111111 = 12345678987654321.","Among any 23 people, two share a birthday about half the time.","There are infinitely many numbers between 0 and 1.","The number π has been calculated to trillions of digits."];
+function newFact(){let n=Math.floor(Math.random()*facts.length);document.getElementById("fact").innerHTML=facts[n];}
+let answer;
+function hard(){level="hard"
+let operators=['+','-','/','*','**'];
+let eq="";
+let choo=operators[Math.floor(Math.random()*5)];
+let x,f,y;
+if(choo=='**'){
+x=Math.floor(Math.random()*6);
+f=Math.floor(Math.random()*3)+1;
+eq="x<sup>"+f+"</sup>";
+y=x**f;
+}
+else{
+x=Math.floor(Math.random()*10);
+f=Math.floor(Math.random()*10);
+if(choo=='+'){eq="x+"+f;y=x+f;}
+else if(choo=='-'){eq="x-"+f;y=x-f;}
+else if(choo=='*'){f=Math.floor(Math.random()*9)+1;eq="x×"+f;y=x*f;}
+else{f=Math.floor(Math.random()*9)+1;x*=f;eq="x/"+f;y=x/f;}
+}
+let i=Math.floor(Math.random()*20)+1;
+choo=operators[Math.floor(Math.random()*2)];
+let z,eqq;
+if(choo=='-'){z=y-i;eqq=eq+"-"+i+"="+z;}
+else{z=y+i;eqq=eq+"+"+i+"="+z;}
+answer=x;
+document.getElementById("sum").innerHTML=eqq;
+document.getElementById("result").innerHTML="";
+document.getElementById("mathanswer").value="";
+}
+function medium(){level="medium"
+let operators=['+','-','/','*','**'];
+let eq="";
+let choo=operators[Math.floor(Math.random()*5)];
+let x,f,y;
+if(choo=='**'){
+x=Math.floor(Math.random()*6);
+f=Math.floor(Math.random()*3)+1;
+eq=x+"<sup>"+f+"</sup>";
+y=x**f;
+}
+else{
+x=Math.floor(Math.random()*10);
+f=Math.floor(Math.random()*10);
+if(choo=='+'){eq=x+"+"+f;y=x+f;}
+else if(choo=='-'){eq=x+"-"+f;y=x-f;}
+else if(choo=='*'){f=Math.floor(Math.random()*9)+1;eq=x+"×"+f;y=x*f;}
+else{f=Math.floor(Math.random()*9)+1;x*=f;eq=x+"÷"+f;y=x/f;}
+}
+let i=Math.floor(Math.random()*20)+1;
+choo=operators[Math.floor(Math.random()*2)];
+let z,eqq;
+if(choo=='-'){z=y-i;eqq=eq+"-"+i;}
+else{z=y+i;eqq=eq+"+"+i;}
+answer=z;
+document.getElementById("sum").innerHTML=eqq;
+document.getElementById("result").innerHTML="";
+document.getElementById("mathanswer").value="";
+}
+function easy(){level="easy"
+let x=Math.floor(Math.random()*10);
+let f=Math.floor(Math.random()*10);
+let operators=['+','-','/','*','**'];
+let choo=operators[Math.floor(Math.random()*5)];
+let eqq,ans;
+if(choo=="**"){f=Math.floor(Math.random()*4);eqq=x+"<sup>"+f+"</sup>";ans=x**f;}
+if(choo=="*"){eqq=x+"×"+f;ans=x*f;}
+if(choo=="+"){eqq=x+"+"+f;ans=x+f;}
+if(choo=="-"){eqq=x+"-"+f;ans=x-f;}
+if(choo=="/"){f=Math.floor(Math.random()*9)+1;x=f*x;eqq=x+"÷"+f;ans=x/f;}
+answer=ans;
+document.getElementById("sum").innerHTML=eqq;
+document.getElementById("result").innerHTML="";
+document.getElementById("mathanswer").value="";
+}
+let level;
+function checkMath(){
+let box=document.getElementById("mathanswer");
+let ans=Number(box.value);
+if(ans==answer){box.style.backgroundColor="rgba(0,180,0,0.3)";}
+else{box.style.backgroundColor="rgba(255,0,0,0.3)";}
+setTimeout(function(){box.style.backgroundColor="white";if(level=="easy"){easy();}else if(level=="medium"){medium();}else{hard();}},500);
+}
+</script>
+<h1>MathLab</h1>
+<p>Math isn't just about finding answers. Sometimes, the simplest questions lead to the strangest results. Explore them yourself.</p><br>
+<div class="cardrow">
+<div class="card Card3">
+<p><b>Simple Rules. Complex Patterns</b></p>
+<p>How complicated can one rule get? Well, you'll see!</p><br>
+<button onclick="location.href='COLLATZURL'">Explore</button>
+</div>
+<div class="card Card3">
+<p><b>Should You Switch?</b></p>
+<p>Three doors. One choice. Shall you take the risk to change?</p><br>
+<button onclick="location.href='MONTYURL'">Explore</button>
+</div>
+</div>
+<br>
+<div class="cardrow">
+<div class="card Card3">
+<p><b>The Chosen Number</b></p>
+<p>All roads lead to Rome? FALSE- They all lead to the chosen number!</p><br>
+<button onclick="location.href='6174'">Explore</button>
+</div>
+<div class="card Card3">
+<p><b>Random = <u>NOT</u> Random?</b></p>
+<p>Can complete randomness create something perfectly organised?</p><br>
+<button onclick="location.href='CHAOSURL'">Explore</button>
+</div>
+</div>
+<br>
+<div class="cardrow">
+<div class="card Card 3">
+<h2>Did You Know?</h2>
+<p id="fact">Click the button for a random math fact!</p><br>
+<button onclick="newFact()">Random Fact</button>
+</div>
+<div class="card Card3">
+<div class="mental">
+<div class="Card4">
+<h2>Mental Madness</h2>
+<p id="sum">Choose the difficulty</p>
+<input id="mathanswer" type="number" onkeydown="if(event.key=='Enter'){checkMath()}">
+<p id="result"></p>
+</div>
+<div class="la">
+<div class="Card3">
+<button onclick="easy()" style="width:10vw">Easy</button><br>
+<button onclick="medium()" style="width:10vw">Medium</button><br>
+<button onclick="hard()" style="width:10vw">Hard</button><br>
