@@ -1,0 +1,77 @@
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+body{background-color:#FFFFF5}
+h1{font-family:"Poppins",sans-serif;font-size:4.75vw;font-weight:700;color:#FF8C00;margin:5px}
+h2{font-family:"Poppins",sans-serif;font-size:2.89375vw;font-weight:600;color:#FF8C00;margin:0px}
+p{font-family:"Poppins";font-size:1.25vw;color:#000028;margin:2px}
+Form{margin-bottom:0px}
+input{width:200px;padding:10px;margin:8px;font-size:15px;font-family:"Poppins";border:2px solid #ccc;border-radius:8px}
+button{background-color:#FF8C00;color:white;font-family:"Poppins";font-size:1vw;padding:10px 20px;border:none;border-radius:10px;cursor:pointer;width:15vw}
+.cardrow{display:flex;gap:20px}
+.card{padding:15px;background-color:rgba(251,227,214,0.5);border-radius:20px;}
+.maincard1{background-color:rgba(251,227,214,0.5);border-radius:20px;display:flex;overflow:visible;height:23vw;}
+.cardd{aspect-ratio:1/1;height:100%}
+.Card1{flex:3;}
+.Card2{flex:2;}
+.Card3{flex:1;padding:15px;}
+.tp{height:23vw}
+.nav{position:absolute;top:15px;right:15px}
+#results{display:none}
+</style>
+<title>MathLab | Kaprekars Constant Quiz</title>
+</head>
+<body>
+<script>
+function checkAnswer(button,correct,answer,explanation){
+if(correct){button.style.backgroundColor="rgba(0,180,0,0.6)";}
+else{button.style.backgroundColor="rgba(255,0,0,0.6)";document.getElementById(answer).style.backgroundColor="rgba(0,180,0,0.6)";}
+if(explanation){document.getElementById(explanation).style.display="block";}}
+</script>
+<center>
+<h1>Kaprekars Constant</h1>
+<h2>Quiz</h2>
+<br>
+</center>
+<div class="cardrow">
+<div class=" card Card3">
+<p><b>Q1 Does every valid 4-digit number with at least two different digits eventually reach 6174?</b></p><br>
+<button id="q1" onclick="checkAnswer(this,true,'q1', 'e1')">Yes</button>
+<button onclick="checkAnswer(this,false,'q1', 'e1')">No</button><br>
+<p id="e1" style="display:none">Repeating the process causes different numbers to follow the same paths, eventually leading them all to 6174.</p>
+</div>
+<div class="card Card3">
+<p><b>Q2 Once you reach 6174, will repeating the process give you a different number?</b></p><br>
+<button onclick="checkAnswer(this,false,'q2', 'e2')">Yes</button>
+<button id='q2' onclick="checkAnswer(this, true,'q2', 'e2')">No</button><br>
+<p id="e2" style="display:none"><br>7641-1467=6174</p>
+</div></div><br>
+<div class="cardrow">
+<div class=" card Card3">
+<p><b>Q3 What is Kaprekar's constant</b></p><br>
+<button onclick="checkAnswer(this,false,'q3', 'e3')">6714</button>
+<button onclick="checkAnswer(this,false,'q3', 'e3')">6471</button><br><br>
+<button id="q3" onclick="checkAnswer(this,true,'q3', 'e3')">6174</button>
+<button onclick="checkAnswer(this,false,'q3', 'e3')">7641</button><br>
+</div>
+<div class="card Card3">
+<p><b>Q4 Why do different starting numbers eventually meet?</b></p><br><br>
+<button onclick="checkAnswer(this,false,'q4', 'e4')">Their digits eventually become identical.</button>
+<button id='q4' onclick="checkAnswer(this, true,'q4', 'e4')">Different numbers give the same results.</button>
+<button onclick="checkAnswer(this,false,'q4', 'e4')">The process changes after several steps.</button><br>
+</div></div><br>
+<div class="card">
+<p><b>Q5 Why is 6174 a fixed point?</b></p><br>
+<button style="width:30vw" onclick="checkAnswer(this,false,'q5', 'e5')">It is the largest possible result.</button>
+<button style="width:30vw" id='q5' onclick="checkAnswer(this, true,'q5', 'e4')">7641 − 1467 = 6174 again.</button>
+<button style="width:30vw" onclick="checkAnswer(this,false,'q5', 'e5')">Its digits cannot be rearranged.</button>
+</div>
+<div class="nav">
+<button onclick="location.href='HOMEURL'">Home</button><br><br>
+<button onclick="location.href='QUIZURL'">Chaos Game</button>
+</div>
+</body>
+</html>
