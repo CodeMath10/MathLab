@@ -64,8 +64,8 @@ button{{background-color:#FF8C00;color:white;font-family:"Poppins";font-size:1vw
 <h2>Dr Kaprekar</h2><br>
 <p>D. R. Kaprekar was an Indian mathematician who loved playing around with numbers and finding strange patterns in them.<br><br>In 1949, he discovered the strange behaviour of 6174, which is now known as Kaprekar's Constant. Surprisingly, he made many of his discoveries while working as a school teacher!</p>
 <div class="la" style="margin-top:-25px"><br>
-<button onclick="location.href='index.html'" style="width:auto">Home</button>
-<button onclick="location.href='6174quiz'" style="width:auto">Quiz</button>
+<button onclick="location.href='https://codemath10.github.io/MathLab/'" style="width:auto">Home</button>
+<button onclick="location.href='https://codemath10.github.io/MathLab/6174quiz.html'" style="width:auto">Quiz</button>
 </div>
 </div>
 </div>
@@ -136,8 +136,8 @@ button{{background-color:#FF8C00;color:white;font-family:"Poppins";font-size:1vw
 <h2>Dr Kaprekar</h2><br>
 <p>D. R. Kaprekar was an Indian mathematician who loved playing around with numbers and finding strange patterns in them.<br><br>In 1949, he discovered the strange behaviour of 6174, which is now known as Kaprekar's Constant. Surprisingly, he made many of his discoveries while working as a school teacher!</p>
 <div class="la" style="margin-top:-25px"><br>
-<button onclick="location.href='index.html'" style="width:auto">Home</button>
-<button onclick="location.href='6174quiz'" style="width:auto">Quiz</button>
+<button onclick="location.href='https://codemath10.github.io/MathLab/'" style="width:auto">Home</button>
+<button onclick="location.href='https://codemath10.github.io/MathLab/6174quiz.html'" style="width:auto">Quiz</button>
 </div>
 </div>
 </div>
@@ -210,8 +210,8 @@ button{{background-color:#FF8C00;color:white;font-family:"Poppins";font-size:1vw
 <h2>Dr Kaprekar</h2><br>
 <p>D. R. Kaprekar was an Indian mathematician who loved playing around with numbers and finding strange patterns in them.<br><br>In 1949, he discovered the strange behaviour of 6174, which is now known as Kaprekar's Constant. Surprisingly, he made many of his discoveries while working as a school teacher!</p>
 <div class="la" style="margin-top:-25px"><br>
-<button onclick="location.href='index.html'" style="width:auto">Home</button>
-<button onclick="location.href='6174quiz'" style="width:auto">Quiz</button>
+<button onclick="location.href='https://codemath10.github.io/MathLab/'" style="width:auto">Home</button>
+<button onclick="location.href='https://codemath10.github.io/MathLab/6174quiz.html'" style="width:auto">Quiz</button>
 </div>
 </div>
 </div>
@@ -280,8 +280,8 @@ button{{background-color:#FF8C00;color:white;font-family:"Poppins";font-size:1vw
 <h2>Dr Kaprekar</h2><br>
 <p>D. R. Kaprekar was an Indian mathematician who loved playing around with numbers and finding strange patterns in them.<br><br>In 1949, he discovered the strange behaviour of 6174, which is now known as Kaprekar's Constant. Surprisingly, he made many of his discoveries while working as a school teacher!</p>
 <div class="la" style="margin-top:-25px"><br>
-<button onclick="location.href='index.html'" style="width:auto">Home</button>
-<button onclick="location.href='6174quiz'" style="width:auto">Quiz</button>
+<button onclick="location.href='https://codemath10.github.io/MathLab/'" style="width:auto">Home</button>
+<button onclick="location.href='https://codemath10.github.io/MathLab/6174quiz.html'" style="width:auto">Quiz</button>
 </div>
 </div>
 </div>
@@ -356,8 +356,8 @@ button{{background-color:#FF8C00;color:white;font-family:"Poppins";font-size:1vw
 <h2>Dr Kaprekar</h2><br>
 <p>D. R. Kaprekar was an Indian mathematician who loved playing around with numbers and finding strange patterns in them.<br><br>In 1949, he discovered the strange behaviour of 6174, which is now known as Kaprekar's Constant. Surprisingly, he made many of his discoveries while working as a school teacher!</p>
 <div class="la" style="margin-top:-25px"><br>
-<button onclick="location.href='index.html'" style="width:auto">Home</button>
-<button onclick="location.href='6174quiz'" style="width:auto">Quiz</button>
+<button onclick="location.href='https://codemath10.github.io/MathLab/'" style="width:auto">Home</button>
+<button onclick="location.href='https://codemath10.github.io/MathLab/6174quiz.html'" style="width:auto">Quiz</button>
 </div>
 </div>
 </div>
