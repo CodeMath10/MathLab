@@ -45,7 +45,7 @@ button{{background-color:#FF8C00;color:white;font-family:"Poppins";font-size:1vw
 <h2>Try it out</h2>
 <br><br>
 <p>Enter the number below and watch as the chosen number appears</p>
-<form method="POST">
+<form method="POST" action="/ns">
 <input name="nm" placeholder="Enter any number">
 <button type="submit">Enter</button>
 </form>
@@ -117,7 +117,7 @@ button{{background-color:#FF8C00;color:white;font-family:"Poppins";font-size:1vw
 <h2>Try it out</h2>
 <br><br>
 <p>Enter the number below and watch as the chosen number appears</p>
-<form method="POST">
+<form method="POST" action="/ns">
 <input name="nm" placeholder="Enter any number">
 <button type="submit">Enter</button>
 </form>
@@ -191,7 +191,7 @@ button{{background-color:#FF8C00;color:white;font-family:"Poppins";font-size:1vw
 <h2>Try it out</h2>
 <br><br>
 <p>{r}</p>
-<form method="POST">
+<form method="POST" action="/ns">
 <input name="nm" placeholder="Enter any number">
 <button type="submit">Enter</button>
 </form>
@@ -261,7 +261,7 @@ button{{background-color:#FF8C00;color:white;font-family:"Poppins";font-size:1vw
 <h2>Try it out</h2>
 <br><br>
 <p>{r}</p>
-<form method="POST">
+<form method="POST" action="/ns">
 <input name="nm" placeholder="Enter any number">
 <button type="submit">Enter</button>
 </form>
@@ -337,7 +337,7 @@ button{{background-color:#FF8C00;color:white;font-family:"Poppins";font-size:1vw
 <h2>Try it out</h2>
 <br><br>
 <p>{r}<b>6174</b></p>
-<form method="POST">
+<form method="POST" action="/ns">
 <input name="nm" placeholder="Enter any number">
 <button type="submit">Enter</button>
 </form>
