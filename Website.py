@@ -59,6 +59,7 @@ button{{background-color:#FF8C00;color:white;font-family:"Poppins";padding:10px 
 .Card2{{flex:2;}}
 .Card3{{flex:1;padding:15px;}}
 .tp{{height:23vw}}
+.la{{text-align:right}}
 #results{{display:none}}
 </style>
 <title>MathLab | Random = NOT Random?</title>
@@ -139,6 +140,7 @@ button{{background-color:#FF8C00;color:white;font-family:"Poppins";padding:10px 
 .Card2{{flex:2;}}
 .Card3{{flex:1;padding:15px;}}
 .tp{{height:23vw}}
+.la{{text-align:right}}
 #results{{display:none}}
 </style>
 <title>MathLab | Random = NOT Random?</title>
