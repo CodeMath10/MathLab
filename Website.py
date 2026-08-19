@@ -82,9 +82,9 @@ button{{background-color:#FF8C00;color:white;font-family:"Poppins";padding:10px 
 </div>
 
 <div class="cardd">
-<img id="chaosimg" src="static/10.png" style="height:100%;width:100%;display:block;">
+<img id="chaosimg" src="/data?ss=10" style="height:100%;width:100%;display:block;">
 <script>
-function showPoints(n){{document.getElementById("chaosimg").src=n+".png";}}
+function showPoints(n){{document.getElementById("chaosimg").src="/data?ss="+n;}}
 </script>
 </div>
 </div>
@@ -157,9 +157,9 @@ button{{background-color:#FF8C00;color:white;font-family:"Poppins";padding:10px 
 </div>
 
 <div class="cardd">
-<img id="chaosimg" src="static/10.png" style="height:100%;width:100%;display:block;">
+<img id="chaosimg" src="/data?ss=10" style="height:100%;width:100%;display:block;">
 <script>
-function showPoints(n){{document.getElementById("chaosimg").src=n+".png";}}
+function showPoints(n){{document.getElementById("chaosimg").src="/data?ss="+n;}}
 </script>
 </div>
 </div>
