@@ -110,6 +110,11 @@ function showPoints(n){{document.getElementById("chaosimg").src="/data?ss="+n;}}
 <div class="card">
 <h2>The Sierpiński Triangle</h2>
 <p>What you've just made is called the <b>Sierpiński Triangle</b>. It is a fractal — a pattern that repeats itself at smaller and smaller scales. Look closely: the large triangle is made of three smaller triangles, and each of those contains three even smaller ones. This pattern can theoretically continue forever. But here's the weird part: we never told the computer to draw a Sierpiński Triangle. It only chose random corners and moved halfway towards them. Random choices + one simple rule created an incredibly organised pattern.</p>
+
+<div class="la" style="margin-top:-25px">
+<button onclick="location.href='https://codemath10.github.io/MathLab/'" style="width:auto">Home</button>
+<button onclick="location.href='https://codemath10.github.io/MathLab/TriangleQuiz.html'" style="width:auto">Quiz</button>
+</div>
 </div>
 </body>
 </html>"""
@@ -185,6 +190,11 @@ function showPoints(n){{document.getElementById("chaosimg").src="/data?ss="+n;}}
 <div class="card">
 <h2>The Sierpiński Triangle</h2>
 <p>What you've just made is called the <b>Sierpiński Triangle</b>. It is a fractal — a pattern that repeats itself at smaller and smaller scales. Look closely: the large triangle is made of three smaller triangles, and each of those contains three even smaller ones. This pattern can theoretically continue forever. But here's the weird part: we never told the computer to draw a Sierpiński Triangle. It only chose random corners and moved halfway towards them. Random choices + one simple rule created an incredibly organised pattern.</p>
+
+<div class="la" style="margin-top:-25px">
+<button onclick="location.href='https://codemath10.github.io/MathLab/'" style="width:auto">Home</button>
+<button onclick="location.href='https://codemath10.github.io/MathLab/TriangleQuiz.html'" style="width:auto">Quiz</button>
+</div>
 </div>
 </body>
 </html>"""
