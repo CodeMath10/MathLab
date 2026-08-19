@@ -1,0 +1,115 @@
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+body{background-color:#FFFFF5}
+h1{font-family:"Poppins",sans-serif;font-size:4.75vw;font-weight:700;color:#FF8C00;margin:5px}
+h2{font-family:"Poppins",sans-serif;font-size:2.89375vw;font-weight:600;color:#FF8C00;margin:0px}
+p{font-family:"Poppins";font-size:1.25vw;color:#000028;margin:2px}
+Form{margin-bottom:0px}
+input{width:200px;padding:10px;margin:8px;font-size:15px;font-family:"Poppins";border:2px solid #ccc;border-radius:8px}
+button{background-color:#FF8C00;color:white;font-family:"Poppins";font-size:1vw;padding:10px 20px;border:none;border-radius:9px;cursor:pointer;width:15vw}
+img{width:7vw;margin:auto;}
+.cardrow{display:flex;gap:20px}
+.card{padding:15px;background-color:rgba(251,227,214,0.5);border-radius:20px;}
+.maincard1{background-color:rgba(251,227,214,0.5);border-radius:20px;display:flex;overflow:visible;height:23vw;}
+.cardd{aspect-ratio:1/1;height:100%}
+.Card0{flex:2.5}
+.Card1{flex:3;}
+.Card2{flex:2;}
+.Card3{flex:1;padding:15px;}
+.tp{height:23vw}
+.nav{position:absolute;top:15px;right:15px;}
+.plez{height:190px;width:auto;margin-top:5px}
+.la{text-align:right}
+#results{display:none}
+</style>
+<title>MathLab | Should you Switch?</title>
+</head>
+<body>
+    <script>
+        let car=Math.floor(Math.random()*3)+1;
+        let choice;
+        let revealed;
+        function chooseDoor(n){if(choice!=undefined){return;}
+            choice=n;
+            let d=[1,2,3];
+            let p=d.filter(x=>x!=choice&&x!=car);
+            revealed=p[Math.floor(Math.random()*p.length)];
+            document.getElementById("t"+choice).innerHTML="<b><u>Door "+choice+"</u></b>";
+            document.getElementById("d"+revealed).src="OG.png";
+            document.getElementById("inst").innerHTML="A goat! Will you switch?"
+            document.getElementById("decision").style.display="block"}
+        function stay(){document.getElementById("decision").style.display="none";if(choice==car){document.getElementById("d"+car).src="OC.png"; document.getElementById("inst").innerHTML="You Win!"}
+            else{document.getElementById("d"+choice).src="OG.png";document.getElementById("inst").innerHTML="Better luck next time."}
+            setTimeout(resetGame,5000);}
+        function switchDoor(){
+                document.getElementById("decision").style.display="none";
+                let d=[1,2,3];
+                let p=d.filter(x=>x!=choice&&x!=revealed)[0];
+                document.getElementById("t"+p).innerHTML="<b><u>Door "+p+"</u></b>";
+                document.getElementById("t"+choice).innerHTML="<b>Door "+choice+"</b>";
+                if(p==car){document.getElementById("d"+p).src="OC.png";document.getElementById("inst").innerHTML="You Win!";}
+                else{document.getElementById("d"+p).src="OG.png";document.getElementById("inst").innerHTML="Better luck next time.";}
+                setTimeout(resetGame,5000);}
+        function resetGame(){
+            car=Math.floor(Math.random()*3)+1;
+            choice=undefined;
+            revealed=undefined;
+            document.getElementById("d1").src="C.png";
+            document.getElementById("d2").src="C.png";
+            document.getElementById("d3").src="C.png";
+            document.getElementById("inst").innerHTML="Choose any door";
+            document.getElementById("decision").style.display="none";
+            document.getElementById("t1").innerHTML="<b>Door 1</b>";
+            document.getElementById("t2").innerHTML="<b>Door 2</b>";
+            document.getElementById("t3").innerHTML="<b>Door 3</b>";}
+        function Switch(){document.getElementById("S").style.display="block";document.getElementById("NS").style.display="none"}
+        function noSwitch(){document.getElementById("NS").style.display="block";document.getElementById("S").style.display="none"}
+    </script>
+    <h1>Should you Switch?</h1>
+    <p>Welcome to the MathShow! Today, you're going to play a game with high stakes. You could walk away a millionaire—or the same as you are now. Good luck!</p>
+    <div class="cardrow">
+        
+        <div class="card Card1">
+            <h2>How to play?</h2>
+            <p style="font-size:1.75vw"><b>The rules are simple:<br><br>1. First, choose any door.<br>2. One of the other doors will reveal a goat, and you will be given the choice to switch.<br>3. Once you have chosen the final door, you will get whatever is behind it.</b></p>
+        </div>
+        <div class="card Card2">
+            <H2 id="inst">Choose any door</H2>
+            <button onclick="chooseDoor(1)" style="width:10vw"><p id="t1"><b>Door 1</b></p><br><img id="d1" src="C.png"></button>
+            <button onclick="chooseDoor(2)" style="width:10vw"><p id="t2"><b>Door 2</b></p><br><img id="d2" src="C.png"></button>
+            <button onclick="chooseDoor(3)" style="width:10vw"><p id="t3"><b>Door 3</b></p><br><img id="d3" src="C.png"></button>
+            <div id="decision" style="display:none">
+                <br><br>
+                <button onclick="stay()">Stay</button>
+                <button onclick="switchDoor()">Switch</button>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="cardrow">
+        <div class="card Card2">
+            <button onclick="Switch()">With Switch</button>
+            <button onclick="noSwitch()">Without Switch</button>
+            <div id="S">
+                <img class="plez" src="WS.png">
+                <img class="plez" src="switchpi.png">
+            </div>
+            <div id="NS" style="display:none">
+                <img class="plez" src="NS.png">
+                <img class="plez" src="noswitchpi.png">
+            </div>
+        </div>
+        <div class="card Card0">
+            <h2>So... Should you switch?</h2>
+            <p>Unless you're deliberately trying to get a goat and not a car, switching is the more sensible choice. Most (⅔) of the time, you will initially pick a goat, meaning there is a ⅔ chance the car is behind one of the other two doors. Monty (the host) then reveals a goat behind one of them. Since he deliberately reveals a goat, that ⅔ probability is now concentrated on the one remaining unopened door. So, by switching, you have a ⅔ chance of winning!</p>
+            <div class="la" style="margin-top:-25px">
+            <button onclick="location.href='HOMEURL'" style="width:auto">Home</button>
+            <button onclick="location.href='QUIZURL'" style="width:auto">Quiz</button>
+            </div>
+        </div>
+    </div>
+</body>
