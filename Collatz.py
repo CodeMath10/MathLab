@@ -124,8 +124,8 @@ function openTab(tab){{document.getElementById("try").style.display="none";docum
 <h2>Why 3x <u><b>+1</b></u></h2>
 <p>I'm pretty sure you still have one burning question in your head: if it's odd, why multiply by 3 and <b>add 1</b>? Let's try with an example of 5 again. 5 is odd. 5x3=15. 15 is odd. 15x3=45. 45 is yet again odd. 45x3=135. And 135 is odd too. 135x3=405. And it just keeps growing. This is because whenever you multiply any odd number by another odd number (like 3), the answer stays odd. Adding the 1 makes sure the answer is even and the numbers don't just multiply by 3 forever.</p>
 <div class="la" style="margin-top:-25px">
-<button onclick="location.href='/index.html'" style="width:auto">Home</button>
-<button onclick="location.href='/CollatzQuiz.html'" style="width:auto">Quiz</button>
+<button onclick="location.href='https://codemath10.github.io/MathLab/'" style="width:auto">Home</button>
+<button onclick="location.href='https://codemath10.github.io/MathLab/CollatzQuiz.html'" style="width:auto">Quiz</button>
 </div>
 </div>
 </div>
@@ -202,8 +202,8 @@ document.getElementById(tab).style.display="block";
 <h2>Why 3x <u><b>+1</b></u></h2>
 <p>I'm pretty sure you still have one burning question in your head: if it's odd, why multiply by 3 and <b>add 1</b>? Let's try with an example of 5 again. 5 is odd. 5x3=15. 15 is odd. 15x3=45. 45 is yet again odd. 45x3=135. And 135 is odd too. 135x3=405. And it just keeps growing. This is because whenever you multiply any odd number by another odd number (like 3), the answer stays odd. Adding the 1 makes sure the answer is even and the numbers don't just multiply by 3 forever.</p>
 <div class="la" style="margin-top:-25px">
-<button onclick="location.href=''" style="width:auto">Home</button>
-<button onclick="location.href='/CollatzQuiz.html'" style="width:auto">Quiz</button>
+<button onclick="location.href='https://codemath10.github.io/MathLab/'" style="width:auto">Home</button>
+<button onclick="location.href='https://codemath10.github.io/MathLab/CollatzQuiz.html'" style="width:auto">Quiz</button>
 </div>
 </div>
 </div>
